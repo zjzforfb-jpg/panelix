@@ -1,0 +1,93 @@
+{
+  "defaultMode": "dontAsk",
+  "allowlist": ["*"],
+  "autoUpdate": true,
+  "theme": "dark",
+  
+  "permissions": {
+    "allowedTools": ["Read", "Write", "Edit", "Bash", "MultiEdit", "Grep", "Glob"],
+    "allowedCommands": [
+      "npm",
+      "node", 
+      "npx",
+      "git",
+      "cat",
+      "ls",
+      "pwd",
+      "mkdir",
+      "rm",
+      "cp",
+      "mv"
+    ],
+    "allowedGlobs": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.json",
+      "**/*.md",
+      "**/*.css",
+      "**/*.html",
+      "**/*.sh"
+    ],
+    "deniedPaths": [
+      "node_modules/**",
+      ".git/**",
+      "dist/**",
+      "*.lock"
+    ]
+  },
+
+  "hooks": {
+    "PostToolUse": [
+      {
+        "tool": "Write",
+        "glob": "**/*.{ts,tsx,js,jsx}",
+        "command": "npx prettier --write \"$FILE\" 2>/dev/null || true"
+      },
+      {
+        "tool": "Edit",
+        "glob": "**/*.{ts,tsx,js,jsx}",
+        "command": "npx prettier --write \"$FILE\" 2>/dev/null || true"
+      }
+    ],
+    "PreCommit": [
+      "npm run lint:fix 2>/dev/null || true"
+    ],
+    "OnError": [
+      "echo '[ERROR] $(date): $ERROR_MESSAGE' >> logs/claude-errors.log"
+    ]
+  },
+
+  "memory": {
+    "file": "CLAUDE.md",
+    "autoAppendOnError": true,
+    "readOnStart": true,
+    "sections": {
+      "memoryBank": "## 🧠 Memory Bank",
+      "progress": "## 🎯 V3.0 升级进度"
+    }
+  },
+
+  "longTask": {
+    "maxIterations": 50,
+    "continueOnError": true,
+    "maxTurnsPerIteration": 20,
+    "checkpointInterval": 5,
+    "autoSaveProgress": true
+  },
+
+  "codeReview": {
+    "triggerPhrases": [
+      "update rules",
+      "add rule",
+      "记住这个",
+      "别再犯这个错",
+      "learn from this"
+    ],
+    "ruleFormat": {
+      "template": "### {category}\n- ❌ **Anti-pattern:** {antiPattern}\n- ✅ **Fix:** {fix}\n- 📅 **Date:** {date}"
+    }
+  }
+}
+

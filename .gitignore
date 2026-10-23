@@ -1,0 +1,45 @@
+# ── 依赖 ─────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ── 构建产物 ─────────────────────────────────────
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+
+# ── 本地配置（含 API Key，绝不提交）──────────────
+# 使用 `cp config.example.json config.json` 生成本地配置
+config.json
+config.local.json
+.env
+.env.*
+!.env.example
+
+# ── Python ──────────────────────────────────────
+.venv/
+venv/
+.env_py_*/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ── 日志与调试 ───────────────────────────────────
+logs/
+*.log
+.cursor/
+.claude/debug.log
+
+# ── 系统与编辑器 ─────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+*.swp
+
+# ── 本地工具产物 ─────────────────────────────────
+.workbuddy-ai/
+*.bak
+*.tmp
