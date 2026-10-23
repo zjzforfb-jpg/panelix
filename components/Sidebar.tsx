@@ -41,7 +41,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentView, onChangeView, has
     <div className="w-20 bg-[#151515] border-r border-white/5 flex flex-col items-center py-6 shrink-0 z-50">
       {/* App Logo */}
       <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-sm shadow-xl mb-8 border border-white/10">
-        AM
+        PX
       </div>
 
       <nav className="flex-1 w-full px-2">

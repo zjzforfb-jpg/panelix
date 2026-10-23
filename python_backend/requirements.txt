@@ -1,4 +1,4 @@
-# Auto-Manju Video Concat Service Dependencies
+# Panelix Video Concat Service Dependencies
 fastapi>=0.109.0
 uvicorn[standard]>=0.27.0
 python-multipart>=0.0.9

@@ -1,5 +1,5 @@
 {
-  "name": "Copy of Copy of 小说文案改写-版本 2.7",
-  "description": "An AI-powered pipeline factory for converting novel text into Webtoon scripts using Google Gemini.",
+  "name": "Panelix",
+  "description": "AI 漫剧生产流水线：把网文自动改写成可分镜的 AI 视频脚本（React + Gemini + FastAPI）",
   "requestFramePermissions": []
 }

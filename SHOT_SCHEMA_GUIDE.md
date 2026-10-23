@@ -1,6 +1,6 @@
 # Shot 结构化数据指南 (PanelShot Schema Guide)
 
-本文档介绍 Auto-Manju V3.0 中引入的 **Panel Shot 结构化数据系统**，用于提升分镜三连图生成的一致性和可控性。
+本文档介绍 Panelix V3.0 中引入的 **Panel Shot 结构化数据系统**，用于提升分镜三连图生成的一致性和可控性。
 
 ---
 

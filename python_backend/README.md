@@ -1,4 +1,4 @@
-# Auto-Manju Video Concat Service
+# Panelix Video Concat Service
 
 本地 Python sidecar 服务，使用 ffmpeg 拼接多段视频。
 
@@ -82,7 +82,7 @@ Content-Type: multipart/form-data
 
 ## 前端配置
 
-在 Auto-Manju 设置中配置 `videoConcatBaseUrl`:
+在 Panelix 设置中配置 `videoConcatBaseUrl`:
 
 ```
 默认值: http://127.0.0.1:8008
@@ -95,7 +95,7 @@ Content-Type: multipart/form-data
 ### ffmpeg 不可用
 
 ```
-[Auto-Manju Concat] ✗ ffmpeg NOT FOUND
+[Panelix Concat] ✗ ffmpeg NOT FOUND
 ```
 
 解决: 安装 ffmpeg 并确保在 PATH 中

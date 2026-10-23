@@ -365,7 +365,7 @@ export const useStoryboardMerger = () => {
         ctx.fillStyle = '#333';
         ctx.font = `${width*0.01}px sans-serif`;
         ctx.textAlign = 'right';
-        ctx.fillText("Auto-Manju Video Gen Script", width - sbP, height - sbP);
+        ctx.fillText("Panelix Video Gen Script", width - sbP, height - sbP);
 
         const dataUrl = canvas.toDataURL(format, quality);
         setIsMerging(false);

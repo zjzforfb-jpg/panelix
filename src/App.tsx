@@ -50,7 +50,7 @@ function App2() {
   return (
     <div className="min-h-screen bg-gray-100 p-8">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-800">Auto-Manju V3.0 架构验证</h1>
+        <h1 className="text-3xl font-bold text-gray-800">Panelix V3.0 架构验证</h1>
         <p className="text-gray-600">正在测试：OPFS 文件存储 + RxDB 数据库</p>
       </header>
 

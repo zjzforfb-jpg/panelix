@@ -52,8 +52,8 @@ export const Dashboard: React.FC<DashboardProps> = ({
             </div>
             
             <div>
-                <h1 className="text-4xl font-bold tracking-tight mb-2">Auto-Manju Adapter</h1>
-                <p className="text-gray-400 text-sm">专业的网文转漫剧/短剧辅助工作台</p>
+                <h1 className="text-4xl font-bold tracking-tight mb-2">Panelix</h1>
+                <p className="text-gray-400 text-sm">网文转漫剧 · AI 分镜生产工作台</p>
             </div>
 
             {/* Main Action Card */}

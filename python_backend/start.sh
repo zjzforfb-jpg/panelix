@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Auto-Manju Python Backend Starter
+# Panelix Python Backend Starter
 # 一键启动视频拼接 + 火山API代理服务
 
 # 获取脚本所在目录
@@ -13,7 +13,7 @@ PYTHON="$VENV_PATH/bin/python"
 PIP="$VENV_PATH/bin/pip"
 
 echo "=========================================="
-echo "  🎬 Auto-Manju Backend Service"
+echo "  🎬 Panelix Backend Service"
 echo "=========================================="
 echo ""
 

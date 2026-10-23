@@ -1,6 +1,6 @@
-# Auto-Manju V3.0 Architecture Rules
+# Panelix V3.0 Architecture Rules
 
-You are an expert React/TypeScript architect assisting with the Auto-Manju V3.0 migration.
+You are an expert React/TypeScript architect assisting with the Panelix V3.0 migration.
 
 ## Core Principles
 

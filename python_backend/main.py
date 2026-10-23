@@ -1,5 +1,5 @@
 """
-Auto-Manju Video Concat Service
+Panelix Video Concat Service
 
 A local sidecar Python backend for:
 1. Concatenating video segments using ffmpeg
@@ -50,7 +50,7 @@ DEBUG_LOG_PATH = os.environ.get(
 )
 
 app = FastAPI(
-    title="Auto-Manju Video Concat Service",
+    title="Panelix Video Concat Service",
     version=VERSION,
     description="Local sidecar for video concatenation using ffmpeg"
 )
@@ -530,13 +530,13 @@ async def proxy_volc_image_generate(
 @app.on_event("startup")
 async def startup_event():
     """Log startup info"""
-    print(f"[Auto-Manju] Starting v{VERSION}")
+    print(f"[Panelix] Starting v{VERSION}")
     if check_ffmpeg_available():
-        print("[Auto-Manju] ✓ ffmpeg available")
+        print("[Panelix] ✓ ffmpeg available")
     else:
-        print("[Auto-Manju] ✗ ffmpeg NOT FOUND - concat will fail!")
-    print("[Auto-Manju] ✓ VolcEngine Ark proxy enabled")
-    print("[Auto-Manju] Listening on http://127.0.0.1:8008")
+        print("[Panelix] ✗ ffmpeg NOT FOUND - concat will fail!")
+    print("[Panelix] ✓ VolcEngine Ark proxy enabled")
+    print("[Panelix] Listening on http://127.0.0.1:8008")
 
 
 # ============================================================================
